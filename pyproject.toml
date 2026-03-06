@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "espeech"
+version = "0.1.0"
+description = "Local Gradio app for ESpeech TTS"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "f5-tts==1.1.17",
+  "gradio==6.8.0",
+  "huggingface_hub==1.5.0",
+  "numpy",
+  "ruaccent==1.5.8.3",
+  "soundfile",
+  "torch",
+  "torchaudio",
+  "transformers==5.3.0",
+]
+
+[project.scripts]
+espeech = "espeech.main:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.0",
+]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
