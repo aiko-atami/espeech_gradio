@@ -1,0 +1,30 @@
+reference:
+  audio: ../refs/red.wav
+  text_file: ../refs/red.txt
+
+settings:
+  accent_mode: auto
+  remove_silence: false
+  seed: 42
+  nfe_step: 62
+  speed: 0.9
+  cross_fade_duration: 0.15
+
+output:
+  dir: ../out/red
+  zip: false
+  save_spectrograms: false
+
+items:
+  - text: "Красный флаг. Гонка остановлена."
+  - text: "Красный флаг. Немедленно снизить скорость."
+  - text: "Красный флаг. Обгон запрещен."
+  - text: "Красный флаг. Заезд на пит-лейн."
+  - text: "Красный флаг. Сессия прервана."
+  - text: "Красный флаг. Дискотека окончена."
+  - text: "Красный флаг. Все в боксы."
+  - text: "Красный флаг. Суши весла."
+  - text: "Красный флаг. Стоп-машина."
+  - text: "Красный флаг. Приехали."
+  - text: "Красный флаг. Глуши мотор."
+  - text: "Красный флаг. Возврат на решетку."
